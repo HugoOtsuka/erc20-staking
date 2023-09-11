@@ -1,7 +1,8 @@
 import { NextPage } from "next";
-import { Container, Flex, Heading } from "@chakra-ui/react";
+import { Container, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { useAddress } from "@thirdweb-dev/react";
 import StakeToken from "../components/StakeToken";
+import RewardToken from "../components/RewardToken";
 
 const Home: NextPage = () => {
   const address = useAddress();
@@ -18,7 +19,10 @@ const Home: NextPage = () => {
 
   return (
     <Container maxW={"1200px"}>
-      <StakeToken />
+      <SimpleGrid columns={2} spacing={4}>
+        <StakeToken />
+        <RewardToken />
+      </SimpleGrid>
     </Container>
   );
 };
