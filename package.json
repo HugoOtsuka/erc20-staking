@@ -1,5 +1,5 @@
 {
-  "name": "erc20s",
+  "name": "erc20-staking",
   "version": "0.1.0",
   "private": true,
   "scripts": {
